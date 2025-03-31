@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Interativa</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .marcado {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista de Itens</h2>
+    <input type="text" id="itemInput" placeholder="Digite um item">
+    <button onclick="adicionarItem()">Adicionar</button>
+    <select id="itemSelect"></select>
+    <button onclick="marcarItem()">Marcar</button>
+    <button onclick="desmarcarItem()">Desmarcar</button>
+    <button onclick="removerItem()">Remover</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Itens</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaItens"></tbody>
+    </table>
+    <script src="atividade3script.js"></script>
+</body>
+</html>
